@@ -13,9 +13,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 8; }
+  z-index: 9; }
   header .menu {
     position: absolute;
+    z-index: 10;
     top: 8px;
     left: 8px;
     width: 200px;
@@ -37,39 +38,41 @@ header {
       padding-left: 16px;
       color: #ffffff;
       letter-spacing: 4px; }
-  header .g-menu {
-    position: fixed;
-    left: -200px;
-    width: 180px;
-    background-color: #fff; }
-    header .g-menu ul#main-menu {
-      padding: 0;
-      margin: 0; }
-      header .g-menu ul#main-menu li {
+
+.g-menu {
+  position: fixed;
+  left: -200px;
+  width: 180px;
+  background-color: #fff;
+  z-index: 20; }
+  .g-menu ul#main-menu {
+    padding: 0;
+    margin: 0; }
+    .g-menu ul#main-menu li {
+      width: 100%;
+      line-height: 60px;
+      padding-left: 32px;
+      list-style: none;
+      border-bottom: 1px #000000 solid; }
+      .g-menu ul#main-menu li a {
+        display: block;
         width: 100%;
-        line-height: 60px;
-        padding-left: 32px;
-        list-style: none;
-        border-bottom: 1px #000000 solid; }
-        header .g-menu ul#main-menu li a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          color: #000000; }
-          header .g-menu ul#main-menu li a:hover {
-            color: #007936;
-            text-decoration: none; }
-      header .g-menu ul#main-menu li#back-contents {
-        color: #000; }
-        header .g-menu ul#main-menu li#back-contents:hover {
-          color: #007936; }
+        height: 100%;
+        color: #000000; }
+        .g-menu ul#main-menu li a:hover {
+          color: #007936;
+          text-decoration: none; }
+    .g-menu ul#main-menu li#back-contents {
+      color: #000; }
+      .g-menu ul#main-menu li#back-contents:hover {
+        color: #007936; }
 
 .overlay {
   position: fixed;
   display: block;
   width: 100%;
   background: #000;
-  z-index: 9;
+  z-index: 8;
   opacity: 0;
   transition: opacity 0.3s linear 0; }
 

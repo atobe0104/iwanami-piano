@@ -23,14 +23,14 @@ jQuery(document).ready(function($) {
 
 function menuopen(){
     $(".g-menu").animate({"left": "0px"}, 300 ,'swing',function(){
-	    $(".overlay").css("z-index","9");
+	    $(".overlay").css("z-index","11");
 	    $(".overlay").css("opacity","0.3");
     });
 }
 
 function menuclose(){
     $(".g-menu").animate({"left": "-200px"}, 300 ,'swing',function(){
-	    $(".overlay").css("z-index","-1");
+	    $(".overlay").css("z-index","8");
 	    $(".overlay").css("opacity","0");
     });
 }

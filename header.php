@@ -32,20 +32,20 @@
 			<div class="menu-btn"></div>
 			<div class="menu-text">MENU</div>
 		</div>
-		<?php wp_nav_menu(
-			array(
-				'theme_location' => 'primary',
-				'container_class' => 'g-menu',
-				'menu_class' => 'g-menu-nav',
-				'fallback_cb' => '',
-				'menu_id' => 'main-menu',
-			)
-		); ?>
-
-<audio autoplay controls loop>
-   <source src="<?php echo get_template_directory_uri(); ?>/audio/music.mp3" type="audio/mp3">
-</audio> 
+		<audio autoplay controls loop>
+		   <source src="<?php echo get_template_directory_uri(); ?>/audio/music.mp3" type="audio/mp3">
+		</audio> 
 	</header><!-- #masthead -->	
+
+	<?php wp_nav_menu(
+		array(
+			'theme_location' => 'primary',
+			'container_class' => 'g-menu',
+			'menu_class' => 'g-menu-nav',
+			'fallback_cb' => '',
+			'menu_id' => 'main-menu',
+		)
+	); ?>
 
 <div class="overlay"></div>
 
