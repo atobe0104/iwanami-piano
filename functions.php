@@ -112,6 +112,9 @@ function _tk_scripts() {
 	// load top js
 	wp_enqueue_script('_top', get_template_directory_uri().'/javascripts/top.js', array('jquery') );
 
+	// load gmap js
+	wp_enqueue_script('_gmap', get_template_directory_uri().'/javascripts/', array('jquery') );
+
 	// load bootstrap wp js
 	wp_enqueue_script( '_tk-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
 
