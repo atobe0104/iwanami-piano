@@ -2,7 +2,10 @@ body {
   font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", serif, Arial, sans-serif;
   background-color: #fdf8de;
   position: relative;
-  padding-bottom: 100px; }
+  height: 100%;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+  margin-bottom: 0 !important; }
 
 audio {
   display: none; }
@@ -72,7 +75,7 @@ header {
   display: block;
   width: 100%;
   background: #000;
-  z-index: 8;
+  z-index: -1;
   opacity: 0;
   transition: opacity 0.3s linear 0; }
 
@@ -81,8 +84,9 @@ header {
 #top-text {
   position: relative;
   overflow: hidden;
-  background-attachment: fixed;
-  background: url("../images/background-photo.jpg") center center no-repeat;
+  width: 100%;
+  height: auto;
+  background: url("../images/background-photo.jpg") left top no-repeat;
   background-size: cover; }
   #top-text .top-title {
     position: absolute;
@@ -95,9 +99,12 @@ header {
     text-align: center; }
   #top-text p {
     position: absolute;
+    z-index: 9;
     top: 50%;
-    width: 100%;
+    left: 50%;
+    width: 80%;
     margin-top: -0.5em;
+    margin-left: -40%;
     font-size: 16px;
     line-height: 40px;
     text-align: center;
@@ -112,15 +119,23 @@ header {
   width: 100%;
   letter-spacing: 6px; }
 
+@media screen and (max-width: 1000px) {
+  .over-wrap {
+    overflow-x: hidden; } }
+
 /*　アクセス
 ***************************************/
 .access-area {
-  padding-bottom: 350px; }
+  padding-bottom: 350px;
+  overflow: hidden;
+  width: 100%;
+  position: relative; }
   .access-area .title {
     padding: 32px 0; }
   .access-area #gmap {
     position: absolute;
-    left: 0;
+    z-index: 8;
+    width: 100%;
     height: 320px;
     border-top: 2px #ff6200 solid;
     border-bottom: 2px #ff6200 solid; }

@@ -53,14 +53,11 @@
 	<div id="top-text">
 		<h2 class="top-title">About</h2>
 		<p>
-			岩波ピアノ教室では、幅広い年層に楽しくピアノを習える場所です。<br>
-			ピアノを弾きたいと思った方、お子様の教育の一部にピアノを取り入れたい方<br>
-			岩波ピアノ教室ではあなたのペースに合わせてレッスンを行います。<br>
+			岩波ピアノ教室では、幅広い年層に楽しくピアノを習える場所です。<br class="hidden-xs">
+			ピアノを弾きたいと思った方、お子様の教育の一部にピアノを取り入れたい方<br class="hidden-xs">
+			岩波ピアノ教室ではあなたのペースに合わせてレッスンを行います。<br class="hidden-xs">
 		</p>
 	</div>
 <?php endif;?>
 
 <div class="main-content">
-	<div class="container">
-		<div class="row">
-			<div id="content" class="main-content-inner col-sm-12 col-md-12">

@@ -17,12 +17,17 @@ Template Name: top_page
 
 get_header(); ?>
 
-<div class="pages-wrapper row">
-	<div class="col-md-12">
+<div class="container">
+	<div class="pages-wrapper row">
+		<div class="col-md-12">
+			<h2 class="title">LESSON</h2>
+		</div>
+	</div>
+</div>
 		<div class="access-area">
 			<h2 class="title">ACCESS</h2>
 			<div id="gmap"></div>
-			<div id="route" style="width : 700px; height : 250px; border : 1px solid #999999; margin : 1em 0; overflow : scroll;"></div>
+		</div>
 <!-- googleマップ -->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript"> 
@@ -65,17 +70,16 @@ function initialize()
 	// var marker1 = new google.maps.Marker();
 	goalmarker.setPosition(new google.maps.LatLng(35.729115, 139.550529));		//↑で定義したマーカーを指定のポイントに置く
 	goalmarker.setMap(map);		//描写するマップを指定
-
-	var startmarker = new google.maps.Marker({
-      icon: new google.maps.MarkerImage(
-      	'<?php echo get_template_directory_uri(); ?>/images/pin-icon1.png',
-        new google.maps.Size(100,180) // size
-        // new google.maps.Point(0,0),  // origin
-        // new google.maps.Point(100,180) // anchor
-      )
-    });
-	startmarker.setPosition(new google.maps.LatLng(35.728403, 139.552894)); //駅に配置したマーカーに誤差があったので修正
-	startmarker.setMap(map);
+	// var startmarker = new google.maps.Marker({
+ //      icon: new google.maps.MarkerImage(
+ //      	'<?php echo get_template_directory_uri(); ?>/images/pin-icon1.png',
+ //        new google.maps.Size(100,180) // size
+ //        // new google.maps.Point(0,0),  // origin
+ //        // new google.maps.Point(100,180) // anchor
+ //      )
+ //    });
+	// startmarker.setPosition(new google.maps.LatLng(35.728403, 139.552894)); //駅に配置したマーカーに誤差があったので修正
+	// startmarker.setMap(map);
 	//マップの上に指定した２点のルートを表示する。
 	directionsDisplay.setMap(map);
 	calcRoute();
@@ -102,9 +106,4 @@ function calcRoute()
 window.onload=initialize;
 </script> 
 <!-- googleマップ　END -->
-		</div>
-	</div>
-
-</div>
-
 <?php get_footer(); ?>

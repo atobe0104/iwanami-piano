@@ -6,14 +6,16 @@ jQuery(document).ready(function($) {
 
 	console.log(boxMarginLeft);
     $("#top-text,.overlay,.g-menu").css( "height" , winheight + 'px');
-    $("#gmap").css({
-    	"width":winwidth + 'px',
-    	"left": '-'+ boxMarginLeft+ 'px'
-    });
-
+    // $("#gmap").css({
+    // 	"width":winwidth + 'px',
+    // 	"left": '-'+ boxMarginLeft+ 'px'
+    // });
     $('#main-menu > li:last-child').after('<li id="back-contents">閉じる</li>');
 
-    $(".menu > .menu-btn").click(function(){
+    // var currenttop = scrollTop();
+    // console.log(currenttop);
+
+    $(".menu-btn").click(function(){
     	menuopen();
     });
     $(".overlay,#back-contents").click(function(){
@@ -30,7 +32,7 @@ function menuopen(){
 
 function menuclose(){
     $(".g-menu").animate({"left": "-200px"}, 300 ,'swing',function(){
-	    $(".overlay").css("z-index","8");
+	    $(".overlay").css("z-index","-1");
 	    $(".overlay").css("opacity","0");
     });
 }
