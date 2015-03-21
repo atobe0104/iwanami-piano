@@ -10,10 +10,11 @@ jQuery(document).ready(function($) {
         });
         $('#main-menu > li:last-child').after('<li id="back-contents">閉じる</li>');
         // //要素がスクロールで表示されたらアニメーション
-        $('.lesson-animation').scrollInTurn({
+        $('.step1,.step2,.step3').scrollInTurn({
             fadeInSpeed:1000,
             delaySpeed:600,
-            delayHeight:300
+            easing : 'linear',
+            fadeOutEvent : false
         });
 
         $(".menu-btn").click(function(){
