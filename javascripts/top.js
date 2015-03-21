@@ -5,12 +5,14 @@ jQuery(document).ready(function($) {
     $(window).load(function() {
         $("#top-text,.overlay,.g-menu").css( "height" , winheight + 'px');
         $("#loading").delay('1000').animate({"opacity":"0"},300 ,"swing");
-        $("#wrapper").delay('2000').fadeIn("slow",function(){
+        $("#wrapper").delay('2000').animate({"opacity":"1"},300,"swing",function(){
             initialize();
         });
         $('#main-menu > li:last-child').after('<li id="back-contents">閉じる</li>');
         // //要素がスクロールで表示されたらアニメーション
-        $('.lesson-animation').scrollInTurn();
+        $('.lesson-animation').scrollInTurn({
+            delayheight:1000
+        });
 
         $(".menu-btn").click(function(){
             menuopen();
