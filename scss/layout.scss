@@ -156,13 +156,26 @@ header{
 /*　Lesson area
 ***************************************/
 #lesson-area{
-	.lesson{
-		width:280px;
-		min-height:400px;
-		background-color:#ffffff;
-		float:left;
-		margin:24px 16px 0 16px;
-		opacity:0;
+	.lesson-property{
+		width:936px;
+		margin:0 auto;
+		.lesson{
+			width:280px;
+			min-height:400px;
+			background-color:#f6f6f6;
+			float:left;
+			margin:24px 16px 0 16px;
+			padding:32px;
+			opacity:0;
+			border-radius:5px;
+			text-align:center;
+			.lesson-image{
+				width:180px;
+				height:180px;
+				border-radius:180px;
+				margin-bottom:24px;
+			}
+		}
 	}
 }
 

@@ -16,21 +16,38 @@ Template Name: top_page
  */
 
 get_header(); ?>
-
-<div class="container">
-	<div class="pages-wrapper row">
-		<div id="lesson-area" class="col-md-12 lesson-animation">
-			<h2 class="title">LESSON</h2>
-			<div class="lesson step1 target"></div>
-			<div class="lesson step2 target"></div>
-			<div class="lesson step3 target"></div>
+		<!-- Lesson start -->
+		<div class="container">
+			<div class="pages-wrapper row">
+				<div id="lesson-area" class="col-md-12">
+					<h2 class="title">LESSON</h2>
+					<div class="lesson-animation lesson-property">
+						<div class="lesson step1 target">
+							<img src="<?php echo get_template_directory_uri();?>/images/child-01.jpg" class="lesson-image">
+							<div class="lesson-text">
+								<p>
+									幅広い年代へ向けてレッスン<br>
+									幅広い年代へ向けてレッスン<br>
+									幅広い年代へ向けてレッスン<br>
+									幅広い年代へ向けてレッスン<br>
+								</p>
+							</div>
+						</div>
+						<div class="lesson step2 target"></div>
+						<div class="lesson step3 target"></div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
+		<!-- Lesson end -->
+		
+		<!-- access start -->
 		<div id="access-area">
 			<h2 class="title">ACCESS</h2>
 			<div id="gmap"></div>
 		</div>
+		<!-- access end -->
+
 <!-- googleマップ -->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript"> 
