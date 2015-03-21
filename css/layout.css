@@ -7,8 +7,24 @@ body {
   padding-bottom: 100px;
   margin-bottom: 0 !important; }
 
+#wrapper {
+  display: none; }
+
 audio {
   display: none; }
+
+#loading {
+  position: fixed;
+  width: 154px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  margin-left: -77px;
+  margin-top: -65px;
+  text-align: center; }
+  #loading img {
+    width: 100px;
+    height: 100px; }
 
 /* ヘッダー　と　メニュー
 ***************************************/
@@ -119,20 +135,26 @@ header {
   width: 100%;
   letter-spacing: 6px; }
 
-@media screen and (max-width: 1000px) {
-  .over-wrap {
-    overflow-x: hidden; } }
+/*　Lesson area
+***************************************/
+#lesson-area .lesson {
+  width: 280px;
+  min-height: 400px;
+  background-color: #ffffff;
+  float: left;
+  margin: 24px 16px 0 16px;
+  opacity: 0; }
 
 /*　アクセス
 ***************************************/
-.access-area {
+#access-area {
   padding-bottom: 350px;
   overflow: hidden;
   width: 100%;
   position: relative; }
-  .access-area .title {
+  #access-area .title {
     padding: 32px 0; }
-  .access-area #gmap {
+  #access-area #gmap {
     position: absolute;
     z-index: 8;
     width: 100%;

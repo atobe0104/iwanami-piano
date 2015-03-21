@@ -6,11 +6,28 @@ body{
 	overflow-x:hidden;
 	padding-bottom:100px;
 	margin-bottom:0!important;
+	// display:none;
+}
+#wrapper{
+	display:none;
 }
 audio{
 	display:none;
 }
-
+#loading{
+	position:fixed;
+	width:154px;
+	height:130px;
+	top:50%;
+	left:50%;
+	margin-left:-77px;
+	margin-top:-65px;
+	text-align:center;
+	img{
+		width:100px;
+		height:100px;
+	}
+}
 /* ヘッダー　と　メニュー
 ***************************************/
 header{
@@ -135,14 +152,23 @@ header{
 	width:100%;
 	letter-spacing:6px;
 }
-.over-wrap{
-	@media screen and (max-width:1000px){
-		overflow-x:hidden;
+
+/*　Lesson area
+***************************************/
+#lesson-area{
+	.lesson{
+		width:280px;
+		min-height:400px;
+		background-color:#ffffff;
+		float:left;
+		margin:24px 16px 0 16px;
+		opacity:0;
 	}
 }
+
 /*　アクセス
 ***************************************/
-.access-area{
+#access-area{
 	padding-bottom:350px;
 	overflow:hidden;
 	width:100%;

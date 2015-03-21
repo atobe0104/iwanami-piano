@@ -2,24 +2,20 @@ var winheight = window.innerHeight;
 var winwidth = window.innerWidth;
 
 jQuery(document).ready(function($) {
-	var boxMarginLeft = parseInt($(".container").css('margin-left'), 10);
+    $(window).load(function() {
+        $("#top-text,.overlay,.g-menu").css( "height" , winheight + 'px');
+        $("#loading").delay('1000').animate({"opacity":"0"},300 ,"swing");
+        $("#wrapper").hide().delay('2000').fadeIn("slow");
+        $('#main-menu > li:last-child').after('<li id="back-contents">閉じる</li>');
+        // //要素がスクロールで表示されたらアニメーション
+        $('.lesson-animation').scrollInTurn();
 
-	console.log(boxMarginLeft);
-    $("#top-text,.overlay,.g-menu").css( "height" , winheight + 'px');
-    // $("#gmap").css({
-    // 	"width":winwidth + 'px',
-    // 	"left": '-'+ boxMarginLeft+ 'px'
-    // });
-    $('#main-menu > li:last-child').after('<li id="back-contents">閉じる</li>');
-
-    // var currenttop = scrollTop();
-    // console.log(currenttop);
-
-    $(".menu-btn").click(function(){
-    	menuopen();
-    });
-    $(".overlay,#back-contents").click(function(){
-    	menuclose();
+        $(".menu-btn").click(function(){
+        	menuopen();
+        });
+        $(".overlay,#back-contents").click(function(){
+        	menuclose();
+        });
     });
 });
 
