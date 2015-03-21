@@ -5,16 +5,18 @@ jQuery(document).ready(function($) {
     $(window).load(function() {
         $("#top-text,.overlay,.g-menu").css( "height" , winheight + 'px');
         $("#loading").delay('1000').animate({"opacity":"0"},300 ,"swing");
-        $("#wrapper").hide().delay('2000').fadeIn("slow");
+        $("#wrapper").delay('2000').fadeIn("slow",function(){
+            initialize();
+        });
         $('#main-menu > li:last-child').after('<li id="back-contents">閉じる</li>');
         // //要素がスクロールで表示されたらアニメーション
         $('.lesson-animation').scrollInTurn();
 
         $(".menu-btn").click(function(){
-        	menuopen();
+            menuopen();
         });
         $(".overlay,#back-contents").click(function(){
-        	menuclose();
+            menuclose();
         });
     });
 });
