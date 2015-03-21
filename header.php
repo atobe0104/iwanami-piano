@@ -38,7 +38,7 @@
 			<div class="menu-text">MENU</div>
 		</div>
 		<audio autoplay controls loop>
-		   <source src="<?php echo get_template_directory_uri(); ?>/audio/music.mp3" type="audio/mp3">
+		   <source src="<?php the_field('music',$post->ID); ?>" type="audio/mp3">
 		</audio> 
 	</header><!-- #masthead -->	
 
