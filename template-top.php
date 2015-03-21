@@ -19,12 +19,15 @@ get_header(); ?>
 
 <div class="container">
 	<div class="pages-wrapper row">
-		<div class="col-md-12">
+		<div id="lesson-area" class="col-md-12 lesson-animation">
 			<h2 class="title">LESSON</h2>
+			<div class="lesson step1 target"></div>
+			<div class="lesson step2 target"></div>
+			<div class="lesson step3 target"></div>
 		</div>
 	</div>
 </div>
-		<div class="access-area">
+		<div id="access-area">
 			<h2 class="title">ACCESS</h2>
 			<div id="gmap"></div>
 		</div>

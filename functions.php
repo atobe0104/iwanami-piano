@@ -62,12 +62,6 @@ function _tk_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 */
 	register_nav_menu( 'primary', __( 'Primary Menu', '_tk' ) );
-	register_nav_menu( 'secondary', __( 'mobile Menu', '_tk' ) );
-	register_nav_menu( 'third', __( 'residence Menu', '_tk' ) );
-	register_nav_menu( 'forth', __( 'residence-lot Menu', '_tk' ) );
-	register_nav_menu( 'footer-1-menu', __( 'footer-1-menu', '_tk' ) );
-	register_nav_menu( 'footer-2-menu', __( 'footer-2-menu', '_tk' ) );
-	register_nav_menu( 'footer-3-menu', __( 'footer-3-menu', '_tk' ) );
 }
 endif; // _tk_setup
 add_action( 'after_setup_theme', '_tk_setup' );
@@ -110,6 +104,7 @@ function _tk_scripts() {
 	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery') );
 
 	// load top js
+	wp_enqueue_script('_scrollevent', get_template_directory_uri().'/javascripts/scrollelement.js', array('jquery') );
 	wp_enqueue_script('_top', get_template_directory_uri().'/javascripts/top.js', array('jquery') );
 
 	// load gmap js
