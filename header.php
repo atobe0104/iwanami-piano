@@ -31,7 +31,7 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/images/loading.gif">
 		<p>このサイトは音が出ます</p>
 	</div>
-	<div id="wrapper">
+
 	<header id="masthead" class="site-header" role="banner">
 		<div class="menu">
 			<div class="menu-btn"></div>
@@ -51,6 +51,7 @@
 			'menu_id' => 'main-menu',
 		)
 	); ?>
+	<div id="wrapper">
 
 <div class="overlay"></div>
 
