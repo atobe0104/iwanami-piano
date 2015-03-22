@@ -23,7 +23,9 @@ get_header(); ?>
 					<h2 class="title">LESSON</h2>
 					<div class="lesson-property">
 						<div class="lesson step1 target">
-							<img src="<?php the_field('lesson1-image',$post->ID); ?>" class="lesson-image">
+							<p class="lesson-image">
+								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+							</p>
 							<div class="lesson-text">
 								<p>
 									<?php the_field('lesson1-text',$post->ID); ?>
@@ -31,7 +33,9 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="lesson step2 target">
-							<img src="<?php the_field('lesson1-image',$post->ID); ?>" class="lesson-image">
+							<div class="lesson-image">
+								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+							</div>
 							<div class="lesson-text">
 								<p>
 									<?php the_field('lesson1-text',$post->ID); ?>
@@ -39,11 +43,11 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="lesson step3 target">
-							<img src="<?php the_field('lesson1-image',$post->ID); ?>" class="lesson-image">
+							<p class="lesson-image">
+								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+							</p>
 							<div class="lesson-text">
-								<p>
-									<?php the_field('lesson1-text',$post->ID); ?>
-								</p>
+								<?php the_field('lesson1-text',$post->ID); ?>
 							</div>
 						</div>	
 					</div>

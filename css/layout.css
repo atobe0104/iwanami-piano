@@ -134,7 +134,8 @@ header {
   font-size: 40px;
   text-align: center;
   width: 100%;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  padding: 32px 0; }
 
 /*　レッスン
 ***************************************/
@@ -149,22 +150,44 @@ header {
     min-height: 400px;
     background-color: #f6f6f6;
     float: left;
-    margin: 24px 16px 0 16px;
+    margin: 0 16px 0 16px;
     padding: 32px;
     border-radius: 5px;
     text-align: center;
     opacity: 0; }
+    #lesson-area .lesson-property .lesson .lesson-image {
+      margin-bottom: 24px;
+      text-align: center; }
+      #lesson-area .lesson-property .lesson .lesson-image img {
+        width: 180px;
+        height: 180px;
+        border-radius: 180px; }
+    #lesson-area .lesson-property .lesson .lesson-text {
+      text-align: left; }
     @media screen and (max-width: 768px) {
       #lesson-area .lesson-property .lesson {
+        min-height: 0;
         width: 100%;
-        margin: 16px 0; } }
-    #lesson-area .lesson-property .lesson .lesson-image {
-      width: 180px;
-      height: 180px;
-      border-radius: 180px;
-      margin-bottom: 24px; }
-    #lesson-area .lesson-property .lesson .lesson-text p {
-      text-align: left; }
+        height: 150px;
+        margin: 16px 0;
+        padding: 16px;
+        display: table; }
+        #lesson-area .lesson-property .lesson .lesson-image {
+          display: table-cell;
+          vertical-align: middle;
+          width: 40%;
+          margin: 0; }
+          #lesson-area .lesson-property .lesson .lesson-image img {
+            height: auto; }
+        #lesson-area .lesson-property .lesson .lesson-text {
+          display: table-cell;
+          vertical-align: middle;
+          width: 55%;
+          height: 150px;
+          padding: 0 2.5%; }
+          #lesson-area .lesson-property .lesson .lesson-text p {
+            vertical-align: middle;
+            margin: 0; } }
   #lesson-area .lesson-property .lesson.on {
     opacity: 1; }
   #lesson-area .lesson-property .step1, #lesson-area .lesson-property .step2, #lesson-area .lesson-property .step3 {
@@ -190,8 +213,6 @@ header {
   overflow: hidden;
   width: 100%;
   position: relative; }
-  #access-area .title {
-    padding: 32px 0; }
   #access-area #gmap {
     position: relative;
     z-index: 8;
