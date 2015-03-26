@@ -140,13 +140,13 @@ header {
 /*　レッスン
 ***************************************/
 #lesson-area .lesson-property {
-  width: 936px;
+  width: 100%;
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
     #lesson-area .lesson-property {
       width: 100%; } }
   #lesson-area .lesson-property .lesson {
-    width: 280px;
+    width: 299px;
     min-height: 400px;
     background-color: #f6f6f6;
     float: left;
