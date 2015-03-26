@@ -1,8 +1,17 @@
 var winheight = window.innerHeight;
 var winwidth = window.innerWidth;
+var menublackpoint = winheight - 30;
 
 jQuery(document).ready(function($) {
     $(window).load(function() {
+        $(window).scroll(function () {
+            var ScrTop = $(document).scrollTop();
+            if (ScrTop > menublackpoint){
+                $(".menu > .menu-text").css("color","#666666");
+            }else if(ScrTop < menublackpoint){
+                $(".menu > .menu-text").css("color","#ffffff");
+            }
+        });
         $("#top-text,.overlay,.g-menu").css( "height" , winheight + 'px');
         $("#loading").delay('1000').animate({"opacity":"0"},300 ,"swing");
         $("header,#wrapper").delay('2000').animate({"opacity":"1"},300,"swing",function(){
@@ -16,7 +25,6 @@ jQuery(document).ready(function($) {
             easing : 'linear',
             fadeOutEvent : false
         });
-
         $(".menu-btn").click(function(){
             menuopen();
         });
@@ -25,7 +33,6 @@ jQuery(document).ready(function($) {
         });
     });
 });
-
 function menuopen(){
     $(".g-menu").animate({"left": "0px"}, 300 ,'swing',function(){
 	    $(".overlay").css("z-index","11");
