@@ -34,22 +34,22 @@ get_header(); ?>
 						</div>
 						<div class="lesson step2 target">
 							<div class="lesson-image">
-								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+								<img src="<?php the_field('lesson2-image',$post->ID); ?>">
 							</div>
 							<div class="lesson-text">
 								<p>
-									<?php the_field('lesson1-text',$post->ID); ?>
+									<?php the_field('lesson2-text',$post->ID); ?>
 								</p>
 							</div>
 						</div>
 						<div class="lesson step3 target">
 							<p class="lesson-image">
-								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+								<img src="<?php the_field('lesson3-image',$post->ID); ?>">
 							</p>
 							<div class="lesson-text">
-								<?php the_field('lesson1-text',$post->ID); ?>
+								<?php the_field('lesson3-text',$post->ID); ?>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -63,9 +63,9 @@ get_header(); ?>
 			<div class="container">
 				<div class="pages-wrapper row">
 					<div id="access-addless" class="col-md-12">
-						<p>西東京市保谷町４−４−５</p>
-						<p>西武新宿線：「西武柳沢駅」より徒歩５分</p>
-						<p>関東バス：「西武柳沢駅」より徒歩５分</p>
+						<p>西東京市保谷町３-２５-２１</p>
+						<p>西武新宿線：「西武柳沢駅」より徒歩３分</p>
+						<p>関東バス：「西武柳沢駅」より徒歩３分</p>
 					</div>
 				</div>
 			</div>
