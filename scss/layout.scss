@@ -27,6 +27,15 @@ audio{
 		height:100px;
 	}
 }
+
+/* bootstrapをサイトに最適化
+***************************************/
+@media screen and (min-width:1200px){
+	.container{
+		width:1024px;
+	}
+}
+
 /* ヘッダー　と　メニュー
 ***************************************/
 header{
