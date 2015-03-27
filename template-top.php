@@ -34,20 +34,20 @@ get_header(); ?>
 						</div>
 						<div class="lesson step2 target">
 							<div class="lesson-image">
-								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+								<img src="<?php the_field('lesson2-image',$post->ID); ?>">
 							</div>
 							<div class="lesson-text">
 								<p>
-									<?php the_field('lesson1-text',$post->ID); ?>
+									<?php the_field('lesson2-text',$post->ID); ?>
 								</p>
 							</div>
 						</div>
 						<div class="lesson step3 target">
 							<p class="lesson-image">
-								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
+								<img src="<?php the_field('lesson3-image',$post->ID); ?>">
 							</p>
 							<div class="lesson-text">
-								<?php the_field('lesson1-text',$post->ID); ?>
+								<?php the_field('lesson3-text',$post->ID); ?>
 							</div>
 						</div>	
 					</div>
