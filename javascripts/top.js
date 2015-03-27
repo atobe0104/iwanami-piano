@@ -35,8 +35,11 @@ jQuery(document).ready(function($) {
 });
 function menuopen(){
     $(".g-menu").animate({"left": "0px"}, 300 ,'swing',function(){
-	    $(".overlay").css("z-index","11");
-	    $(".overlay").css("opacity","0.3");
+	    $(".overlay").css({
+            "z-index":"11",
+            "opacity":"0.3",
+        });
+        $("header").css("z-index","-1");
         $("#wrapper").css("-webkit-filter","blur(3px)");
     });
 }
@@ -45,6 +48,7 @@ function menuclose(){
     $(".g-menu").animate({"left": "-200px"}, 300 ,'swing',function(){
 	    $(".overlay").css("z-index","-1");
 	    $(".overlay").css("opacity","0");
+        $("header").css("z-index","5");
         $("#wrapper").css("-webkit-filter","blur(0px)");
     });
 }

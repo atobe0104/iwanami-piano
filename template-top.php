@@ -56,21 +56,27 @@ get_header(); ?>
 		</div>
 		<!-- Lesson end -->
 		
-		<!-- access start -->
 		<div id="access-area">
+
+		<!-- access start -->
 			<h2 class="title">ACCESS</h2>
 			<div id="gmap"></div>
 			<div class="container">
 				<div class="pages-wrapper row">
+
 					<div id="access-addless" class="col-md-12">
 						<p>西東京市保谷町３-２５-２１</p>
 						<p>西武新宿線：「西武柳沢駅」より徒歩３分</p>
 						<p>関東バス：「西武柳沢駅」より徒歩３分</p>
 					</div>
+		<!-- access end -->
+
+					<div class="contact-wrap col-md-12 col-sm-12 col-xs-12">
+						コンタクト
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- access end -->
 
 <!-- googleマップ -->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
