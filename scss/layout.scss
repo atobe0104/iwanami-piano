@@ -166,17 +166,18 @@ header{
 ***************************************/
 #lesson-area{
 	.lesson-property{
-		width:936px;
+		width:996px;
+		overflow:hidden;
 		margin:0 auto;
 		@media screen and(max-width:768px){
 			width:100%;	
 		}
 		.lesson{
-			width:280px;
+			width:300px;
 			min-height:400px;
 			background-color:#f6f6f6;
 			float:left;
-			margin:0 16px 0 16px;
+			margin:0 16px;
 			padding:32px;
 			border-radius:5px;
 			text-align:center;
@@ -195,6 +196,8 @@ header{
 			}
 			.lesson-text{
 				text-align:left;
+				letter-spacing:0.3px;
+				line-height:26px;
 			}
 			@media screen and(max-width:768px){
 				min-height:0;
@@ -218,6 +221,8 @@ header{
 					width:55%;
 					height:150px;
 					padding:0 2.5%;
+					letter-spacing: 0.3px;
+					line-height: 25px;
 					p{
 						vertical-align: middle;
 						margin:0;
@@ -257,7 +262,6 @@ header{
 /*　アクセス
 ***************************************/
 #access-area{
-	// padding-bottom:350px;
 	overflow:hidden;
 	width:100%;
 	position:relative;
@@ -269,8 +273,10 @@ header{
 		border-top:2px #ff6200 solid;
 		border-bottom:2px #ff6200 solid;
 	}
-}
+	#access_addless{
 
+	}
+}
 /*　フッター
 ***************************************/
 footer{
