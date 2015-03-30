@@ -59,20 +59,21 @@ get_header(); ?>
 		<div id="access-area">
 
 		<!-- access start -->
-			<h2 class="title">ACCESS</h2>
+			<h2 id="access-title" class="title">ACCESS</h2>
 			<div id="gmap"></div>
 			<div class="container">
 				<div class="pages-wrapper row">
 
 					<div id="access-addless" class="col-md-12">
-						<p>西東京市保谷町３-２５-２１</p>
+						<p>住所：西東京市保谷町３-２５-２１</p>
 						<p>西武新宿線：「西武柳沢駅」より徒歩３分</p>
 						<p>関東バス：「西武柳沢駅」より徒歩３分</p>
 					</div>
 		<!-- access end -->
 
 					<div class="contact-wrap col-md-12 col-sm-12 col-xs-12">
-						コンタクト
+						<h2 id="contact-title" class="title">お問い合わせ</h2>
+						<?php echo do_shortcode("[contact-form-7 id='5' title='contact form']") ?>
 					</div>
 				</div>
 			</div>
@@ -127,6 +128,11 @@ function calcRoute()
     {
         origin: start, //出発地点を設定
         destination: goal, //終点を設定
+        waypoints:[
+		{
+		location: new google.maps.LatLng(35.728657, 139.550043)
+		}
+		],
         travelMode: google.maps.DirectionsTravelMode.WALKING,
         unitSystem: google.maps.DirectionsUnitSystem.METRIC,//単位km表示
     };
