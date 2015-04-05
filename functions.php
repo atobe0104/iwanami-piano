@@ -104,6 +104,7 @@ function _tk_scripts() {
 	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery') );
 
 	// load top js
+	wp_enqueue_script('_bx-slider', get_template_directory_uri().'/javascripts/jquery.bxslider.js', array('jquery') );
 	wp_enqueue_script('_scrollevent', get_template_directory_uri().'/javascripts/scrollelement.js', array('jquery') );
 	wp_enqueue_script('_top', get_template_directory_uri().'/javascripts/top.js', array('jquery'),true );
 
