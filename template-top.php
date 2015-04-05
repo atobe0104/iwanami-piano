@@ -64,14 +64,14 @@ get_header(); ?>
 			<div class="container">
 				<div class="pages-wrapper row">
 
-					<div id="access-addless" class="col-md-12">
+					<div id="access-addless" class="col-md-10 col-sm-12 col-xs-12">
 						<p>住所：西東京市保谷町３-２５-２１</p>
 						<p>西武新宿線：「西武柳沢駅」より徒歩３分</p>
 						<p>関東バス：「西武柳沢駅」より徒歩３分</p>
 					</div>
 		<!-- access end -->
 
-					<div class="contact-wrap col-md-12 col-sm-12 col-xs-12">
+					<div class="contact-wrap col-md-8 col-sm-8 col-xs-12">
 						<h2 id="contact-title" class="title">お問い合わせ</h2>
 						<?php echo do_shortcode("[contact-form-7 id='5' title='contact form']") ?>
 					</div>
@@ -130,7 +130,7 @@ function calcRoute()
         destination: goal, //終点を設定
         waypoints:[
 		{
-		location: new google.maps.LatLng(35.728657, 139.550043)
+		location: new google.maps.LatLng(35.728554, 139.549970)
 		}
 		],
         travelMode: google.maps.DirectionsTravelMode.WALKING,
