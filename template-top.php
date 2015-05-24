@@ -19,38 +19,112 @@ get_header(); ?>
 		<!-- Lesson start -->
 		<div class="container">
 			<div class="pages-wrapper row">
-				<div id="lesson-area" class="col-md-12">
+				<div id="lesson-area" class="col-md-12 col-sm-12 col-xs-12">
 					<h2 class="title">LESSON</h2>
-					<div class="lesson-property">
-						<div class="lesson step1 target">
-							<p class="lesson-image">
-								<img src="<?php the_field('lesson1-image',$post->ID); ?>">
-							</p>
-							<div class="lesson-text">
-								<p>
-									<?php the_field('lesson1-text',$post->ID); ?>
+					<div class="lesson-wrap">
+						<div class="lesson-property">
+							<div class="lesson step1 target">
+								<p class="lesson-image">
+									<img src="<?php the_field('lesson1-image',$post->ID); ?>">
 								</p>
+								<div class="lesson-text">
+									<p>
+										<?php the_field('lesson1-text',$post->ID); ?>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="lesson step2 target">
-							<div class="lesson-image">
-								<img src="<?php the_field('lesson2-image',$post->ID); ?>">
+							<div class="lesson step2 target">
+								<div class="lesson-image">
+									<img src="<?php the_field('lesson2-image',$post->ID); ?>">
+								</div>
+								<div class="lesson-text">
+									<p>
+										<?php the_field('lesson2-text',$post->ID); ?>
+									</p>
+								</div>
 							</div>
-							<div class="lesson-text">
-								<p>
-									<?php the_field('lesson2-text',$post->ID); ?>
+							<div class="lesson step3 target">
+								<p class="lesson-image">
+									<img src="<?php the_field('lesson3-image',$post->ID); ?>">
 								</p>
+								<div class="lesson-text">
+									<?php the_field('lesson3-text',$post->ID); ?>
+								</div>
 							</div>
 						</div>
-						<div class="lesson step3 target">
-							<p class="lesson-image">
-								<img src="<?php the_field('lesson3-image',$post->ID); ?>">
-							</p>
-							<div class="lesson-text">
-								<?php the_field('lesson3-text',$post->ID); ?>
-							</div>
-						</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(window).load(function() {
+			$('#detail-wrap').show();
+				var obj = $('#detail-slider').bxSlider({ // 自動再生に必須
+				auto: false,
+				responsive: false,
+				speed: 1000,
+				displaySlideQty: 2,
+				pager: false,
+				slideWidth: 700,
+				moveSlides: 1,
+				pause: 4000, 
+				prevText: '<　',
+				nextText: '>'
+			});
+			$('#detail-slider-sp').bxSlider({ // 自動再生に必須
+				auto: false,
+				responsive: true,
+				speed: 1000,
+				displaySlideQty: 2,
+				pager: false,
+				slideWidth: 700,
+				moveSlides: 1,
+				pause: 4000, 
+				prevText: '<　',
+				nextText: '>'
+			});
+		});
+	});
+</script>
+<div class="pc-slider hidden-sm hidden-xs">
+	<div id="detail-slider">
+		<div class="slider-element">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo.jpg">
+			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
+		</div>
+		<div class="slider-element">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo02.jpg">
+			<div class="lesson-slider-text">
+				レッスン内容は以下の通り
+			</div>
+		</div>
+		<div class="slider-element">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
+			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
+		</div>
+	</div>
+</div>
+<div class="sp-slider">
+	<div id="detail-slider-sp" class="">
+		<div class="slider-element">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo.jpg">
+			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
+		</div>
+		<div class="slider-element">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo02.jpg">
+			<div class="lesson-slider-text">
+				レッスン内容は以下の通り
+			</div>
+		</div>
+		<div class="slider-element">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
+			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
+		</div>
+	</div>
+</div>
+
 					</div>
+<div class="clearfix control-detail">							
+	<div class="more_lesson"><a href="#lesson-area"><span id="m">M</span><span id="o">o</span><span id="r">r</span><span id="e">e</span> &gt;</a></div>
+	<div class="backto-list">&lt; <span id="b">B</span><span id="a">a</span><span id="c">c</span><span id="k">k</span></div>
+</div>
 				</div>
 			</div>
 		</div>

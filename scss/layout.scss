@@ -1,14 +1,19 @@
 body{
 	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",'メイリオ',Meiryo,"ＭＳ Ｐゴシック", serif,  Arial, sans-serif;
-	background-color:#fdf8de;
+	background-color:#f8f2e5;
+	color:#666666;
 	position:relative;
-	height:100%;
-	overflow-x:hidden;
+	height:100%;	
 	padding-bottom:100px;
 	margin-bottom:0!important;
 }
 #wrapper{
 	opacity:0;
+	min-width:992px;
+	overflow-x:hidden;
+	@media screen and (max-width:768px){
+		min-width:100%;
+	}
 }
 audio{
 	display:none;
@@ -59,7 +64,7 @@ header{
 			float:left;
 			cursor:pointer;
 			transform: rotateY(0deg);
-			transition: transform 0.3s linear 0;
+			transition: transform 0.3s linear;
 			&:hover{
 				transform: rotateY(360deg);			
 			}
@@ -80,7 +85,7 @@ header{
 	left:-200px;
 	width:180px;
 	background-color:#fff;
-	z-index:20;
+	z-index:2000;
 	ul#main-menu{
 		padding:0;
 		margin:0;
@@ -166,26 +171,33 @@ header{
 /*　レッスン
 ***************************************/
 #lesson-area{
+	.lesson-wrap{
+		position:relative;
+		height:500px;
+		@media screen and(max-width:992px){
+			height:auto;	
+		}
+	}
 	.lesson-property{
-		width:996px;
+		width:950px;
 		overflow:hidden;
 		margin:0 auto;
-		@media screen and(max-width:768px){
+		margin-left:auto;
+		text-align:center;
+		@media screen and(max-width:992px){
 			width:100%;	
 		}
 		.lesson{
-			width:300px;
+			width:275px;
 			min-height:400px;
-			background-color:#f6f6f6;
+			border-top:2px solid #ff6200;
+			border-bottom:2px solid #ff6200;
 			float:left;
 			margin:0 16px;
-			padding:32px;
+			padding:32px 16px;
 			border-radius:5px;
 			text-align:center;
 			opacity:0;
-			&:hover{
-				// background-color:#000000;
-			}
 			.lesson-image{
 				margin-bottom:24px;
 				text-align:center;
@@ -199,8 +211,9 @@ header{
 				text-align:left;
 				letter-spacing:0.3px;
 				line-height:26px;
+				height:130px;
 			}
-			@media screen and(max-width:768px){
+			@media screen and(max-width:992px){
 				min-height:0;
 				width:100%;
 				height:150px;
@@ -220,7 +233,6 @@ header{
 					display:table-cell;
 					vertical-align: middle;
 					width:55%;
-					height:150px;
 					padding:0 2.5%;
 					letter-spacing: 0.3px;
 					line-height: 25px;
@@ -258,6 +270,193 @@ header{
 			-webkit-transition-delay:1s;
 		}
 	}
+	.bx-wrapper{
+		width: 100%;
+		max-width:100%!important;
+		max-height:450px;
+		position:absolute;
+		top:0;
+		opacity:0;
+		z-index:3;
+		.bx-viewport{
+			position:relative;
+			overflow:visible!important;
+			@media screen and (max-width:992px){
+				overflow:hidden!important;
+			}
+			#detail-slider{
+				// left:-55.8%;
+				.slider-element{
+					padding:0 36px;	
+				}
+			}
+			&:before{
+				content:"";
+				position:absolute;
+				left:-100%;
+				top:-20px;
+				width: 100%;
+				height: 440px;
+				z-index:4;
+				background-color:#999;
+				opacity:0.7;
+				@media screen and (max-width:992px){
+					display:none;
+				}
+			}
+			&:after{
+				content:"";
+				position:absolute;
+				right:-100%;
+				top:-20px;	
+				width: 100%;
+				height: 440px;
+				z-index:4;
+				background-color:#999;
+				opacity:0.7;
+				@media screen and (max-width:992px){
+					display:none;
+				}
+			}
+		}
+	}
+	.sp-slider{
+		height:0;
+		display:block;
+		transition:height 0.3s linear;
+		@media screen and (min-width:992px){
+			display:none!important;
+		}
+		#detail-slider-sp{
+			.slider-element{
+				padding:0 36px;	
+			}
+		}
+	}
+	.control-detail{
+		font-family: 'Titillium Web',"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",'メイリオ',Meiryo,"ＭＳ Ｐゴシック", serif,  Arial, sans-serif;
+		text-align:center;
+		.backto-list{
+			display:inline-block;
+			margin:0 auto;
+			margin-top:50px;
+			padding:8px 32px;
+			border:2px solid #ff6200;
+			border-radius:10px;
+			cursor:pointer;
+			letter-spacing:3px;
+			font-size:16px;
+			font-style:italic;
+			background:transparent;
+			transition:
+				background-color 0.3s linear,
+				color 0.3s linear
+			;
+			display:none;
+			span{
+				transform:translateY(0px);
+			}
+			&:hover{
+				color:#fff;
+				background-color:#ff6200;
+				span{
+					animation:more_animation 0.5s;
+					-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+					animation-delay:0s;
+					-webkit-animation-delay:0s;
+					&#a{
+						animation:more_animation 0.5s;
+						-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+						animation-delay:0.2s;
+						-webkit-animation-delay:0.2s;
+					}
+					&#c{	
+						animation:more_animation 0.5s;
+						-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+						animation-delay:0.3s;
+						-webkit-animation-delay:0.3s;
+					}
+					&#k{	
+						animation:more_animation 0.5s;
+						-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+						animation-delay:0.4s;
+						-webkit-animation-delay:0.4s;
+					}
+				}
+			}
+		}
+		.more_lesson{
+			display:inline-block;
+			margin:0 auto;
+			margin-top:50px;
+			border:2px solid #ff6200;
+			border-radius:10px;
+			cursor:pointer;
+			letter-spacing:3px;
+			font-size:16px;
+			font-style:italic;
+			background:transparent;
+			transition:
+				background-color 0.3s linear
+			;
+			a{
+				display:block;
+				width:100%;
+				height:100%;
+				padding:8px 32px;
+				color:#666;
+				transition: color 0.3s linear;
+				&:hover{
+					color:#fff;
+					text-decoration:none;
+				}
+			}
+			span{
+				transform:translateY(0px);
+			}
+			&:hover{
+				color:#fff;
+				background-color:#ff6200;
+				span{
+					animation:more_animation 0.5s;
+					-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+					animation-delay:0s;
+					-webkit-animation-delay:0s;
+					&#o{
+						animation:more_animation 0.5s;
+						-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+						animation-delay:0.2s;
+						-webkit-animation-delay:0.2s;
+					}
+					&#r{	
+						animation:more_animation 0.5s;
+						-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+						animation-delay:0.3s;
+						-webkit-animation-delay:0.3s;
+					}
+					&#e{	
+						animation:more_animation 0.5s;
+						-webkit-animation:more_animation 0.5s; /*Safari and Chrome */
+						animation-delay:0.4s;
+						-webkit-animation-delay:0.4s;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes more_animation
+{
+0%   {transform:translateY(0px);}
+50%  {transform:translateY(-4px);}
+100%  {transform:translateY(0px);}
+}
+
+@-webkit-keyframes more_animation /*Safari and Chrome */
+{
+0%   {transform:translateY(0px);}
+50%  {transform:translateY(-4px);}
+100%  {transform:translateY(0px);}
 }
 
 /*　アクセス
@@ -284,11 +483,15 @@ header{
 /*　コンタクトフォーム	
 ***************************************/
 .contact-wrap{
-	@media screen and (min-width:992px){
+	// @media screen and (min-width:992px){
 		float:none;
 		margin:0 auto;
 		width:600px;
-	}
+		@media screen and (max-width:768px){
+			width:100%;
+		}
+		width:600px;
+	// }
 	line-height:28px;
 	.contact-rows{
 		margin:12px 0;
@@ -302,18 +505,50 @@ header{
 	.inputbox{
 		position:relative;
 		padding:0;
+		line-height:38px;
 		&:hover .line{
 			width:100%;
+		}
+		&:focus .line{
+			width:100%;
+		}
+		input{
+			border-bottom:2px dashed #666666;
+			&.ok-input{
+				background:url("../images/input-back.png") right bottom no-repeat;
+			}
+		}
+		select{
+			border:none;
+			background:none;
+		}
+	}
+	.wpcf7-submit{
+		display:block;
+		font-size: 16px;
+		width:150px;
+		padding:8px;
+		border:2px #666666 solid;
+		border-radius:4px;
+		margin:0 auto;
+		text-align:center;
+		&:hover{
+			color:#ffffff;
+			background-color:#666666;
 		}
 	}
 	.line{
 		width:0%;
 		height:4px;
-		background-color: #666666;
+		background-color: #FF6200;
 		position:absolute;
 		bottom:0;
 		left:0;
 		transition:width 0.4s linear;
+		&.null-input{
+			width:0;
+			background-color: #666666!important;
+		}
 	}
 	.center-title{
 		float:none;

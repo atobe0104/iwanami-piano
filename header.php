@@ -16,12 +16,11 @@
 	<link rel="SHORTCUT ICON" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"> 
 
 	<title><?php wp_title('|','true','right'); ?></title>
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400italic,400' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/includes/js/jquery.easing.1.3.js'></script>
+	<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/javascripts/jquery.bxslider.js'></script>
 	<!--[if lt IE 9]>
 		<script src='<?php echo get_template_directory_uri(); ?>/includes/js/respond.js'></script>
 		<script src='<?php echo get_template_directory_uri(); ?>/includes/js/html5shiv.js'></script>
@@ -40,9 +39,9 @@
 			<div class="menu-btn"></div>
 			<div class="menu-text">MENU</div>
 		</div>
- 		<audio autoplay controls loop>
+<!--   		<audio autoplay controls loop>
 		   <source src="<?php the_field('music',$post->ID); ?>" type="audio/mp3">
-		</audio>
+		</audio> -->
 	</header><!-- #masthead -->	
 
 	<?php wp_nav_menu(
@@ -61,10 +60,8 @@
 <?php if(is_front_page()): ?>
 	<div id="top-text">
 		<h2 class="top-title">About</h2>
-		<p>
-			岩波ピアノ教室では、幅広い年層に楽しくピアノを習える場所です。<br class="hidden-xs">
-			ピアノを弾きたいと思った方、お子様の教育の一部にピアノを取り入れたい方<br class="hidden-xs">
-			岩波ピアノ教室ではあなたのペースに合わせてレッスンを行います。<br class="hidden-xs">
+		<p>			
+			<?php the_field("toptext",$post->ID) ?>
 		</p>
 	</div>
 <?php endif;?>
