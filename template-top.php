@@ -58,11 +58,10 @@ get_header(); ?>
 			$('#detail-wrap').show();
 				var obj = $('#detail-slider').bxSlider({ // 自動再生に必須
 				auto: false,
-				responsive: false,
+				responsive: true,
 				speed: 1000,
 				displaySlideQty: 2,
 				pager: false,
-				slideWidth: 700,
 				moveSlides: 1,
 				pause: 4000, 
 				prevText: '<　',
@@ -74,7 +73,6 @@ get_header(); ?>
 				speed: 1000,
 				displaySlideQty: 1,
 				pager: false,
-				slideWidth: 700,
 				moveSlides: 1,
 				pause: 4000, 
 				prevText: '<　',
@@ -86,17 +84,23 @@ get_header(); ?>
 <div class="pc-slider hidden-sm hidden-xs">
 	<div id="detail-slider">
 		<div class="slider-element">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo.jpg">
+			<div class="img-wrap">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo.jpg">
+			</div>
 			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
 		</div>
 		<div class="slider-element">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo02.jpg">
+			<div class="img-wrap">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo02.jpg">
+			</div>
 			<div class="lesson-slider-text">
 				レッスン内容は以下の通り
 			</div>
 		</div>
 		<div class="slider-element">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
+			<div class="img-wrap">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
+			</div>
 			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
 		</div>
 	</div>

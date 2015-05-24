@@ -273,7 +273,6 @@ header{
 	.bx-wrapper{
 		width: 100%;
 		max-width:100%!important;
-		max-height:450px;
 		position:absolute;
 		top:0;
 		opacity:0;
@@ -287,7 +286,16 @@ header{
 			#detail-slider{
 				// left:-55.8%;
 				.slider-element{
-					padding:0 36px;	
+					min-width:700px;
+					text-align: center;
+					.img-wrap{
+						height:400px;
+						overflow: hidden;
+						img{
+							width:100%;
+							height:auto;
+						}						
+					}
 				}
 			}
 			&:before{
@@ -324,10 +332,11 @@ header{
 		display:block;
 		transition:height 0.3s linear;
 		@media screen and (min-width:992px){
-			display:none!important;
+			visibility:hidden;
 		}
 		#detail-slider-sp{
 			.slider-element{
+				width:100px;
 				padding:0 36px;	
 			}
 		}
