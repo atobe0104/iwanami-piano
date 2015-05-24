@@ -276,7 +276,6 @@ header {
         #lesson-area .bx-wrapper .bx-viewport:after {
           display: none; } }
 #lesson-area .sp-slider {
-  height: 0;
   display: block;
   transition: height 0.3s linear; }
   @media screen and (min-width: 992px) {

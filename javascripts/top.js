@@ -45,7 +45,9 @@ jQuery(document).ready(function($) {
             $(".more_lesson").stop().fadeOut("100",function(){
                 $(".backto-list").stop().fadeIn("100").css("display","inline-block");
                 $(".detail-slider").fadeIn("200");
-                $(".sp-slider").css("height","300px");
+                var sliderheight = $(".sp-slider > .bx-wrapper").height();
+                alert(sliderheight);
+                $(".sp-slider").css("height",sliderheight+"px");
             });
             $(".lesson-property").stop().animate({"opacity":"0"},300,"swing" ,function(){
                 $(this).hide();

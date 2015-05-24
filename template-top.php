@@ -72,7 +72,7 @@ get_header(); ?>
 				auto: false,
 				responsive: true,
 				speed: 1000,
-				displaySlideQty: 2,
+				displaySlideQty: 1,
 				pager: false,
 				slideWidth: 700,
 				moveSlides: 1,
