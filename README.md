@@ -9,11 +9,10 @@
 
 「個別系」  
 ＝＞検索クエリーでレシピが入ってる系  
-
-    * 「ハンバーグ」で検索すると http://recipe.yamasa-test.com/recipes/284 が検索結果に入ってること。
-    * 「レンコン」＝＞ http://recipe.yamasa-test.com/recipes/533
-    * 「ジュレ」＝＞ http://recipe.yamasa-test.com/recipes/1259
-    * 「ジュレ」＝＞ http://recipe.yamasa-test.com/recipes/212
+* 「ハンバーグ」で検索すると http://recipe.yamasa-test.com/recipes/284 が検索結果に入ってること。
+* 「レンコン」＝＞ http://recipe.yamasa-test.com/recipes/533
+* 「ジュレ」＝＞ http://recipe.yamasa-test.com/recipes/1259
+* 「ジュレ」＝＞ http://recipe.yamasa-test.com/recipes/212
 
 
 ・「ローストビーフの貝割れ巻き　おろしぽん酢ソース」＝＞ http://recipe.yamasa-test.com/recipes/1988
