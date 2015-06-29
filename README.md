@@ -36,17 +36,17 @@
 * 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1827
 
 
-＝＞カテゴリ検索系
-カテゴリ検索　調理方法「和える」で下記が表示される
-https://recipe.yamasa.com/recipes/745
-https://recipe.yamasa.com/recipes/1222
+＝＞カテゴリ検索系  
+カテゴリ検索　調理方法「和える」で下記が表示される  
+https://recipe.yamasa.com/recipes/745  
+https://recipe.yamasa.com/recipes/1222  
 
-カテゴリ検索　食材「麺・パスタ」で下記が表示される
-https://recipe.yamasa.com/recipes/34
-https://recipe.yamasa.com/recipes/499
+カテゴリ検索　食材「麺・パスタ」で下記が表示される  
+https://recipe.yamasa.com/recipes/34  
+https://recipe.yamasa.com/recipes/499  
 
-カテゴリ検索　ジャンル「イタリアン」で下記が表示される
-https://recipe.yamasa.com/recipes/268
-https://recipe.yamasa.com/recipes/1018
+カテゴリ検索　ジャンル「イタリアン」で下記が表示される  
+https://recipe.yamasa.com/recipes/268  
+https://recipe.yamasa.com/recipes/1018  
 
 -----------------------------------------------
