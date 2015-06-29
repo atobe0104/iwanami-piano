@@ -25,16 +25,16 @@
 の検索結果が同じになってること（現在、順は無視）
 
 ＝＞ある検索クエリーに、レシピが入っていない系（非該当キーワードのテスト）
-・「そうめん」で検索すると、http://recipe.yamasa-test.com/recipes/1092 が検索結果に入ってないこと。
-・「そうめん」＝＞ http://recipe.yamasa-test.com/recipes/1897
-・「ラーメン」＝＞ http://recipe.yamasa-test.com/recipes/1753
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1215
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/597
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1146
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1680
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1217
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/397
-・「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1827
+* 「そうめん」で検索すると、http://recipe.yamasa-test.com/recipes/1092 が検索結果に入ってないこと。
+* 「そうめん」＝＞ http://recipe.yamasa-test.com/recipes/1897
+* 「ラーメン」＝＞ http://recipe.yamasa-test.com/recipes/1753
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1215
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/597
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1146
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1680
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1217
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/397
+* 「パスタ」＝＞ http://recipe.yamasa-test.com/recipes/1827
 
 
 ＝＞カテゴリ検索系
