@@ -1,2 +1,2 @@
 # iwanami-piano
-あああ
+今日は
