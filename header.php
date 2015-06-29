@@ -39,9 +39,9 @@
 			<div class="menu-btn"></div>
 			<div class="menu-text">MENU</div>
 		</div>
-<!--   		<audio autoplay controls loop>
+   		<audio autoplay controls loop>
 		   <source src="<?php the_field('music',$post->ID); ?>" type="audio/mp3">
-		</audio> -->
+		</audio>
 	</header><!-- #masthead -->	
 
 	<?php wp_nav_menu(
@@ -59,6 +59,7 @@
 
 <?php if(is_front_page()): ?>
 	<div id="top-text">
+		<div class="cover-color"></div>
 		<h2 class="top-title">About</h2>
 		<p>			
 			<?php the_field("toptext",$post->ID) ?>

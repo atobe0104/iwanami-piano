@@ -87,23 +87,49 @@ get_header(); ?>
 			<div class="img-wrap">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo.jpg">
 			</div>
-			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
+			<div class="lesson-slider-text">
+				講師情報<br>
+				岩波　涼子 -Iwanami ryoko-<br>
+				昭和５５年 国立大学　教育音楽学科卒<br>
+				大学在学中より個人ピアノ教室開講
+				昨年まで毎年ピアノ発表会を定期開催（今年は未定）
+
+			</div>
 		</div>
 		<div class="slider-element">
 			<div class="img-wrap">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo02.jpg">
 			</div>
 			<div class="lesson-slider-text">
-				レッスン内容は以下の通り
+				<h4>ピアノ奏法・楽典・聴音・リトミック</h4>
 			</div>
 		</div>
 		<div class="slider-element">
 			<div class="img-wrap">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
 			</div>
-			<div class="lesson-slider-text">レッスン内容は以下の通り</div>
+			<div class="lesson-slider-text">
+				受験指導・音楽の定期試験対策・
+				合唱祭伴奏曲指導</div>
+		</div>
+		<div class="slider-element">
+			<div class="img-wrap">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
+			</div>
+			<div class="lesson-slider-text">
+				ソルフェージュ・声楽基本・
+			</div>
+		</div>
+		<div class="slider-element">
+			<div class="img-wrap">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/background-photo03.jpg">
+			</div>
+			<div class="lesson-slider-text">
+				
+			</div>
 		</div>
 	</div>
+				
 </div>
 <div class="sp-slider">
 	<div id="detail-slider-sp" class="">
@@ -125,7 +151,8 @@ get_header(); ?>
 </div>
 
 					</div>
-<div class="clearfix control-detail">							
+<div class="clearfix control-detail">
+	<p>体験レッスンから始められます。</p>							
 	<div class="more_lesson"><a href="#lesson-area"><span id="m">M</span><span id="o">o</span><span id="r">r</span><span id="e">e</span> &gt;</a></div>
 	<div class="backto-list">&lt; <span id="b">B</span><span id="a">a</span><span id="c">c</span><span id="k">k</span></div>
 </div>
