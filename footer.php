@@ -10,12 +10,11 @@
 
 </div><!-- close .main-content -->
 
-<footer>
-	Copyright © 2015 iwanami ryoko. All rights reserved.
-</footer><!-- close #colophon -->
-
 <?php wp_footer(); ?>
 
 </div>
+<footer>
+	Copyright © 2015 iwanami ryoko. All rights reserved.
+</footer><!-- close #colophon -->
 </body>
 </html>

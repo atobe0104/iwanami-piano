@@ -4,6 +4,12 @@ var menublackpoint = winheight - 30;
 
 jQuery(document).ready(function($) {
     $(window).load(function() {
+        var ScrTop = $(document).scrollTop();
+        if (ScrTop > menublackpoint){
+            $(".menu > .menu-text").css("color","#666666");
+        }else if(ScrTop < menublackpoint){
+            $(".menu > .menu-text").css("color","#ffffff");
+        }
         $(window).scroll(function () {
             var ScrTop = $(document).scrollTop();
             if (ScrTop > menublackpoint){
@@ -25,12 +31,52 @@ jQuery(document).ready(function($) {
             easing : 'linear',
             fadeOutEvent : false
         });
+
         linkscroll();
+
         $(".menu-btn").click(function(){
             menuopen();
         });
         $(".overlay,#back-contents").click(function(){
             menuclose();
+        });
+
+        $(".more_lesson a").click(function(){
+            $(".more_lesson").stop().fadeOut("100",function(){
+                $(".backto-list").stop().fadeIn("100").css("display","inline-block");
+                $(".detail-slider").fadeIn("200");
+                var sliderheight = $(".sp-slider > .bx-wrapper").height();
+                $(".sp-slider").css("height",sliderheight+"px");
+            });
+            $(".lesson-property").stop().animate({"opacity":"0"},300,"swing" ,function(){
+                $(this).hide();
+                $(".bx-wrapper").stop().animate({"opacity":"1"},300,"swing");
+            });
+        });
+        $(".backto-list").click(function(){
+            $(this).stop().fadeOut("100",function(){
+                $(".more_lesson").stop().fadeIn("100").css("display","inline-block");
+                $(".detail-slider").hide();
+                $(".sp-slider").css("height","0");
+            });
+            $(".bx-wrapper").stop().animate({"opacity":"0"},300,"swing" ,function(){
+                $(".lesson-property").stop().css("display","block").animate({"opacity":"1"},300,"swing");
+            });
+        });
+
+        // 　コンタクトフォームの状態による、cssの変化
+        $("input[name='name']").blur(function(){
+          if($(this).val() == ""){
+        //入力されていない
+            var parent_div = $(this).parent("div").attr(id);
+            $(parent_div + " > .line").addClass("null-input");
+            $(this).removeClass("ok-input");
+          }else{
+        //入力されている
+            $(this).addClass("ok-input");
+            $(parent_div > ".line").removeClass("null-input");
+            $(parent_div > ".line").css("width","100%");
+          }
         });
     });
 });
